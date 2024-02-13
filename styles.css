@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Arial Black', sans-serif;
+}
+
+
 .container {
     padding: 20px;
-    border: 1px solid #000000;
     margin: 0px;
     display: flex;
     width: 100%;
@@ -14,22 +18,58 @@
 #header-container{
     background-color: #1F2937;
     flex-direction: column;
+    padding: 0px 200px;
 }
 #navigation-container{
-    border: 1px solid white;
+    align-items: center;
+    padding: 0px;
+    
 }
 .logo, .links{
-    border: 1px solid pink;
     flex: 1;
     padding: 20px;
+}
+.links ul{
+    color: #E5E7EB;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 #header-main-container{
-    border: 1px solid yellow;
+
 }
 #header-main-left, #header-main-right{
-    border: 1px solid green;
     flex: 1;
     padding: 20px;
+    font-size: 18px;
+    color: #E5E7EB;
+    
+}
+#header-main-left p{
+    margin-bottom: 20px;
+}
+#header-signup{
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    border-style: none;
+    font-weight: bold;
+    transition: background-color 0.1s;
+}
+#header-signup:hover{
+    background-color: #5993f0;
+}
+#header-signup:active{
+    transform: scale(0.98);
+    background-color: #3882F6;
+}
+#header-main-container h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
 }
 /* Action Section */
 #action-container{
